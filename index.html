@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dentiva Premium Dental Clinic - Your trusted partner in dental care. Expert dentists, modern technology, and personalized treatment plans for a healthier, brighter smile.">
+    <meta name="keywords" content="dental clinic, dentist, teeth whitening, dental implants, orthodontics, dentiva">
+    <meta name="author" content="Dentiva">
+    <title>Dentiva | Premium Dental Clinic</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dentiva | Premium Dental Clinic">
+    <meta property="og:description" content="Your trusted partner in dental care. Expert dentists, modern technology, and personalized treatment plans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dentiva.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200">
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Dentiva Dental Clinic",
+        "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200",
+        "url": "https://dentiva.com",
+        "telephone": "+1-555-123-4567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Smile Avenue",
+            "addressLocality": "Beverly Hills",
+            "addressRegion": "CA",
+            "postalCode": "90210",
+            "addressCountry": "US"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-14:00",
+        "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="16" fill="#18D39E"/>
+                    <path d="M16 6C13.5 6 11.5 7.5 10.5 9.5C9.5 11.5 9 13.5 9.5 15.5C10 17.5 11 18 10 20C9 22 8 24 10 25.5C12 27 14 26 14.5 24.5C15 23 15.5 22 16 22C16.5 22 17 23 17.5 24.5C18 26 20 27 22 25.5C24 24 23 22 22 20C21 18 22 17.5 22.5 15.5C23 13.5 22.5 11.5 21.5 9.5C20.5 7.5 18.5 6 16 6Z" fill="white"/>
+                </svg>
+                <span>Dentiva</span>
+            </a>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="#home" class="navbar__link active">Home</a></li>
+                <li><a href="#about" class="navbar__link">About Us</a></li>
+                <li><a href="#team" class="navbar__link">Team</a></li>
+                <li><a href="#services" class="navbar__link">Services</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+            <a href="#appointment" class="btn btn--primary navbar__cta">Book Appointment</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Your Smile Is Our <span class="text-green">Top Priority</span></h1>
+                <p class="hero__text">Experience world-class dental care with our team of expert dentists. We combine cutting-edge technology with gentle, personalized treatments to give you the healthy, beautiful smile you deserve.</p>
+                <div class="hero__actions">
+                    <a href="#appointment" class="btn btn--primary btn--lg">Get Started</a>
+                    <a href="#services" class="hero__learn-more">Learn More
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <div class="hero__trust">
+                    <div class="hero__avatars">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="Patient" class="hero__avatar">
+                        <img src="https://i.pravatar.cc/40?img=2" alt="Patient" class="hero__avatar">
+                        <img src="https://i.pravatar.cc/40?img=3" alt="Patient" class="hero__avatar">
+                        <img src="https://i.pravatar.cc/40?img=4" alt="Patient" class="hero__avatar">
+                    </div>
+                    <div class="hero__rating">
+                        <div class="hero__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                        </div>
+                        <span>4.9/5 from 2,400+ reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__image-card">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=700&fit=crop" alt="Modern dental clinic interior" class="hero__image" loading="eager">
+                    <div class="hero__badge hero__badge--top">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z" fill="#FBBF24"/></svg>
+                        Top Rated
+                    </div>
+                    <div class="hero__float-card hero__float-card--1">
+                        <div class="hero__float-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#18D39E" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="#18D39E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <strong>15,000+</strong>
+                            <span>Happy Patients</span>
+                        </div>
+                    </div>
+                    <div class="hero__float-card hero__float-card--2">
+                        <div class="hero__float-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#18D39E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <strong>20+ Years</strong>
+                            <span>Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__box">
+                <div class="stats__item stats__item--highlight">
+                    <span class="stats__number">#1</span>
+                    <span class="stats__label">Patient Choice</span>
+                    <span class="stats__desc">Award-winning clinic</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number" data-count="15000">0</span>
+                    <span class="stats__label">Happy Patients</span>
+                    <span class="stats__desc">And counting every day</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number" data-count="35">0</span>
+                    <span class="stats__label">Expert Dentists</span>
+                    <span class="stats__desc">Certified professionals</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number" data-count="20">0</span>
+                    <span class="stats__label">Years Experience</span>
+                    <span class="stats__desc">Trusted since 2004</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Premium <span class="text-green">Services</span></h2>
+                <p class="section-desc">We provide a comprehensive range of dental services using the latest technology and techniques to ensure optimal oral health.</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 2 3 6 3 11c0 3 1.5 5.5 3.5 7L12 22l5.5-4C19.5 16.5 21 14 21 11c0-5-4-9-9-9z"/><path d="M8 11h8M12 7v8"/></svg>
+                    </div>
+                    <span class="service-card__num">01</span>
+                    <h3 class="service-card__title">General Dentistry</h3>
+                    <p class="service-card__text">Comprehensive check-ups, cleanings, fillings, and preventive care to maintain your oral health.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                    </div>
+                    <span class="service-card__num">02</span>
+                    <h3 class="service-card__title">Teeth Whitening</h3>
+                    <p class="service-card__text">Professional whitening treatments to brighten your smile by several shades in just one visit.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <span class="service-card__num">03</span>
+                    <h3 class="service-card__title">Dental Implants</h3>
+                    <p class="service-card__text">Permanent, natural-looking tooth replacements that restore function and aesthetics.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <span class="service-card__num">04</span>
+                    <h3 class="service-card__title">Orthodontics</h3>
+                    <p class="service-card__text">Invisalign and traditional braces to align your teeth and correct your bite for a perfect smile.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span class="service-card__num">05</span>
+                    <h3 class="service-card__title">Cosmetic Dentistry</h3>
+                    <p class="service-card__text">Veneers, bonding, and smile makeovers to achieve the radiant, confident smile you always wanted.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <span class="service-card__num">06</span>
+                    <h3 class="service-card__title">Emergency Care</h3>
+                    <p class="service-card__text">Same-day emergency dental services for sudden pain, injuries, or urgent dental problems.</p>
+                    <a href="#appointment" class="service-card__link">Book Now &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+        <div class="container about__inner">
+            <div class="about__image-col">
+                <div class="about__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=700&fit=crop" alt="Dentiva dental clinic team" class="about__image" loading="lazy">
+                    <div class="about__experience-badge">
+                        <span class="about__exp-num">20+</span>
+                        <span class="about__exp-text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about__content">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">A Legacy of <span class="text-green">Excellence</span> in Dental Care</h2>
+                <p class="about__text">Since 2004, Dentiva has been at the forefront of modern dentistry. Our state-of-the-art facility combines advanced technology with a warm, patient-first approach to deliver exceptional dental experiences.</p>
+                <p class="about__text">Our team of board-certified specialists is dedicated to creating personalized treatment plans that address your unique needs, ensuring lasting results and a confident smile.</p>
+                <ul class="about__features">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#18D39E"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z"/></svg>
+                        <span>State-of-the-art dental technology</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#18D39E"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z"/></svg>
+                        <span>Board-certified dental specialists</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#18D39E"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z"/></svg>
+                        <span>Personalized treatment plans</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#18D39E"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z"/></svg>
+                        <span>Comfortable, relaxing environment</span>
+                    </li>
+                </ul>
+                <a href="#team" class="btn btn--primary">Meet Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">The Dentiva <span class="text-green">Difference</span></h2>
+                <p class="section-desc">We go beyond standard dental care. Our commitment to excellence sets us apart.</p>
+            </div>
+            <div class="why-us__grid">
+                <div class="why-us__card">
+                    <div class="why-us__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>Digital X-rays, 3D imaging, and laser dentistry for precise, comfortable treatments.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Same-Day Appointments</h3>
+                    <p>Flexible scheduling with same-day availability for urgent dental needs.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3>Patient-Centered Care</h3>
+                    <p>Every treatment plan is tailored to your individual needs, comfort, and goals.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+                    </div>
+                    <h3>Gentle Approach</h3>
+                    <p> anxiety-free dentistry with sedation options for a completely relaxed experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MEET OUR TEAM ========== -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Experts</span>
+                <h2 class="section-title">Meet Our <span class="text-green">Dentists</span></h2>
+                <p class="section-desc">Our team of highly skilled professionals is dedicated to providing you with the best dental experience.</p>
+            </div>
+            <div class="team__grid">
+                <div class="team__card">
+                    <div class="team__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop" alt="Dr. Sarah Mitchell" class="team__image" loading="lazy">
+                    </div>
+                    <div class="team__info">
+                        <h3>Dr. Sarah Mitchell</h3>
+                        <span>Lead Dentist & Founder</span>
+                        <div class="team__social">
+                            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <div class="team__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop" alt="Dr. James Anderson" class="team__image" loading="lazy">
+                    </div>
+                    <div class="team__info">
+                        <h3>Dr. James Anderson</h3>
+                        <span>Orthodontist</span>
+                        <div class="team__social">
+                            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <div class="team__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Dr. Emily Chen" class="team__image" loading="lazy">
+                    </div>
+                    <div class="team__info">
+                        <h3>Dr. Emily Chen</h3>
+                        <span>Cosmetic Dentist</span>
+                        <div class="team__social">
+                            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <div class="team__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1612531386530-97d3f89e36f5?w=400&h=500&fit=crop" alt="Dr. Michael Torres" class="team__image" loading="lazy">
+                    </div>
+                    <div class="team__info">
+                        <h3>Dr. Michael Torres</h3>
+                        <span>Oral Surgeon</span>
+                        <div class="team__social">
+                            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="text-green">Patients</span> Say</h2>
+            </div>
+            <div class="swiper testimonials__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                        </div>
+                        <p class="testimonial-card__text">"Dentiva completely transformed my smile. Dr. Mitchell and her team were incredibly professional and caring throughout the entire process. I couldn't be happier with the results!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://i.pravatar.cc/48?img=5" alt="Rebecca Lane" class="testimonial-card__avatar">
+                            <div>
+                                <strong>Rebecca Lane</strong>
+                                <span>Smile Makeover Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                        </div>
+                        <p class="testimonial-card__text">"As someone with dental anxiety, I was amazed at how comfortable Dentiva made me feel. The sedation options and gentle approach made my implant procedure completely painless."</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://i.pravatar.cc/48?img=8" alt="David Park" class="testimonial-card__avatar">
+                            <div>
+                                <strong>David Park</strong>
+                                <span>Implant Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24"><path d="M8 1l2.06 4.18L15 5.82l-3.5 3.41.83 4.81L8 11.77l-4.33 2.27.83-4.81L1 5.82l4.94-.64L8 1z"/></svg>
+                        </div>
+                        <p class="testimonial-card__text">"My kids actually look forward to their dental visits now! The staff at Dentiva are wonderful with children and make every visit fun and stress-free for the whole family."</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://i.pravatar.cc/48?img=9" alt="Maria Santos" class="testimonial-card__avatar">
+                            <div>
+                                <strong>Maria Santos</strong>
+                                <span>Family Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SMILE GALLERY ========== -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Smile Gallery</span>
+                <h2 class="section-title">Before & <span class="text-green">After</span></h2>
+                <p class="section-desc">See the incredible transformations our patients have achieved with Dentiva.</p>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop" alt="Teeth whitening before and after" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Teeth Whitening</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=300&fit=crop" alt="Smile makeover transformation" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Smile Makeover</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1445527815219-ecbfec4542f1?w=400&h=300&fit=crop" alt="Dental veneers result" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Dental Veneers</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=300&fit=crop" alt="Orthodontics result" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Orthodontics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container faq__inner">
+            <div class="faq__content">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-green">Questions</span></h2>
+                <p class="section-desc">Find answers to common questions about our dental services and procedures.</p>
+            </div>
+            <div class="faq__accordion">
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>How often should I visit the dentist?</span>
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>We recommend visiting the dentist every six months for a routine check-up and professional cleaning. However, depending on your oral health needs, our dentists may recommend more frequent visits.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Does teeth whitening damage enamel?</span>
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Professional teeth whitening performed by our dentists is completely safe and does not damage your enamel. We use clinically proven whitening agents that are carefully applied to protect your teeth while achieving a brighter smile.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>How long do dental implants last?</span>
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>With proper care and maintenance, dental implants can last a lifetime. They are designed to be a permanent solution for missing teeth and integrate naturally with your jawbone for maximum durability.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Is Invisalign as effective as traditional braces?</span>
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>For many cases, Invisalign is just as effective as traditional braces. Our orthodontist will evaluate your specific needs and recommend the best treatment option. Invisalign is particularly great for adults who want a discreet orthodontic solution.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Do you accept dental insurance?</span>
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Yes, we accept most major dental insurance plans. Our front desk team will help verify your benefits and maximize your coverage. We also offer flexible payment plans for treatments not fully covered by insurance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== APPOINTMENT BOOKING ========== -->
+    <section class="appointment" id="appointment">
+        <div class="container appointment__inner">
+            <div class="appointment__info">
+                <span class="section-tag">Book Now</span>
+                <h2 class="section-title">Schedule Your <span class="text-green">Appointment</span></h2>
+                <p class="section-desc">Ready to transform your smile? Fill out the form and our team will get back to you within 24 hours to confirm your appointment.</p>
+                <div class="appointment__details">
+                    <div class="appointment__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <strong>+1 (555) 123-4567</strong>
+                            <span>Call us anytime</span>
+                        </div>
+                    </div>
+                    <div class="appointment__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <strong>123 Smile Avenue, Beverly Hills</strong>
+                            <span>CA 90210, USA</span>
+                        </div>
+                    </div>
+                    <div class="appointment__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div>
+                            <strong>Mon-Fri: 9AM - 6PM</strong>
+                            <span>Saturday: 9AM - 2PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="appointment__form" id="appointmentForm">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="John">
+                    </div>
+                    <div class="form__group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="service">Service Required</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="general">General Dentistry</option>
+                        <option value="whitening">Teeth Whitening</option>
+                        <option value="implants">Dental Implants</option>
+                        <option value="orthodontics">Orthodontics</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="emergency">Emergency Care</option>
+                    </select>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="" disabled selected>Select a time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Tell us about your dental concerns..."></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== INSURANCE PARTNERS ========== -->
+    <section class="insurance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Insurance</span>
+                <h2 class="section-title">Insurance <span class="text-green">Partners</span></h2>
+                <p class="section-desc">We work with most major insurance providers to make quality dental care affordable.</p>
+            </div>
+            <div class="insurance__grid">
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">Delta Dental</text></svg>
+                </div>
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">Cigna</text></svg>
+                </div>
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">Aetna</text></svg>
+                </div>
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">MetLife</text></svg>
+                </div>
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">United</text></svg>
+                </div>
+                <div class="insurance__logo">
+                    <svg viewBox="0 0 120 40" fill="none"><rect width="120" height="40" rx="8" fill="#f0f0f0"/><text x="60" y="24" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" fill="#333">Humana</text></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Latest Insights</span>
+                <h2 class="section-title">Our <span class="text-green">Blog</span></h2>
+                <p class="section-desc">Stay informed with the latest dental health tips, news, and insights from our expert team.</p>
+            </div>
+            <div class="blog__grid">
+                <article class="blog__card">
+                    <div class="blog__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=250&fit=crop" alt="Dental hygiene tips" class="blog__image" loading="lazy">
+                        <span class="blog__category">Health Tips</span>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__meta">
+                            <span>Jan 15, 2026</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3>10 Essential Tips for Maintaining Perfect Oral Health</h3>
+                        <p>Discover the daily habits that can keep your smile healthy and bright for years to come.</p>
+                        <a href="#" class="blog__link">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="blog__card">
+                    <div class="blog__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=250&fit=crop" alt="Invisalign treatment" class="blog__image" loading="lazy">
+                        <span class="blog__category">Orthodontics</span>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__meta">
+                            <span>Feb 2, 2026</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3>Invisalign vs Traditional Braces: Which is Right for You?</h3>
+                        <p>A comprehensive comparison to help you choose the best orthodontic treatment.</p>
+                        <a href="#" class="blog__link">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="blog__card">
+                    <div class="blog__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=250&fit=crop" alt="Dental technology" class="blog__image" loading="lazy">
+                        <span class="blog__category">Technology</span>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__meta">
+                            <span>Mar 10, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3>How Modern Technology is Revolutionizing Dental Care</h3>
+                        <p>From 3D imaging to laser dentistry, explore the innovations shaping modern dentistry.</p>
+                        <a href="#" class="blog__link">Read More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EMERGENCY BANNER ========== -->
+    <section class="emergency">
+        <div class="container">
+            <div class="emergency__banner">
+                <div class="emergency__content">
+                    <div class="emergency__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Dental Emergency? We're Here for You</h3>
+                        <p>Severe toothache, broken tooth, or dental trauma? Call our emergency line for immediate assistance.</p>
+                    </div>
+                </div>
+                <a href="tel:+15551234567" class="btn btn--white">Call Now: (555) 123-4567</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="navbar__logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#18D39E"/>
+                            <path d="M16 6C13.5 6 11.5 7.5 10.5 9.5C9.5 11.5 9 13.5 9.5 15.5C10 17.5 11 18 10 20C9 22 8 24 10 25.5C12 27 14 26 14.5 24.5C15 23 15.5 22 16 22C16.5 22 17 23 17.5 24.5C18 26 20 27 22 25.5C24 24 23 22 22 20C21 18 22 17.5 22.5 15.5C23 13.5 22.5 11.5 21.5 9.5C20.5 7.5 18.5 6 16 6Z" fill="white"/>
+                        </svg>
+                        <span>Dentiva</span>
+                    </a>
+                    <p>Your trusted partner in premium dental care. Creating healthy, beautiful smiles since 2004.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="white"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Dentistry</a></li>
+                        <li><a href="#services">Teeth Whitening</a></li>
+                        <li><a href="#services">Dental Implants</a></li>
+                        <li><a href="#services">Orthodontics</a></li>
+                        <li><a href="#services">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            123 Smile Avenue, Beverly Hills, CA 90210
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +1 (555) 123-4567
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            info@dentiva.com
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18D39E" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            Mon-Fri: 9AM - 6PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Dentiva Dental Clinic. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
